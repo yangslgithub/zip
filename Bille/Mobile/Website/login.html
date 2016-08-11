@@ -1,0 +1,83 @@
+<!doctype html>
+<html> 
+<head>
+<meta charset="utf-8">
+<title>前海红筹</title>
+<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1,minimum-scale=1, maximum-scale=1"/>
+<meta name="apple-mobile-web-app-capable" content="yes" />     
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />    
+<meta content="telephone=no, email=no" name="format-detection" /> 
+<meta http-equiv="pragma" content="no-cache" />
+<!-- windows phone 点击无高光 -->
+<meta name="msapplication-tap-highlight" content="no">
+<meta name="author" content="Bille.Feng">
+<link rel="stylesheet" href="../css/reset.min.css?v=1.0"/>
+<link rel="stylesheet" href="../css/animate.min.css?v=1.0"/>
+<link rel="stylesheet" href="../css/main.css?v=1.0"/>
+<script src='../js/jquery-1.11.0.min.js'></script>
+<script src="../js/main.js?v=1.0"></script>
+<link href="../js/fancybox/jquery.fancybox.css?v=2.1.5" rel="stylesheet" />
+<script src="../js/fancybox/jquery.fancybox.js?v=2.1.5"></script>
+<body>
+
+<div id="container">
+    <header id="header" role="banner">
+        <hgroup>
+       	  	<a href="javascript:history.go(-1);" class="back"></a>
+            <p>登录</p>
+        </hgroup>
+    </header>
+    <main id="main" role="main" class="clr-graydark">
+        <div class="dist-fixed"></div>
+		<div><img src="../images/webApp/login-banner.jpg" class="imgfull"></div>
+        <form class="common-form login-form">
+        	<label class="input-row bg-white">
+            	<div class="inner">
+                    <span class="ico"></span>
+                    <input type="text" class="input-text fon-medium" value="" placeholder="手机号/邮箱/用户名" required />
+                </div>
+            </label>
+        	<label class="input-row bg-white">
+            	<div class="inner">
+                    <span class="ico"></span>
+                    <input type="password" class="input-text fon-medium" value="" placeholder="登录密码" required />
+                </div>
+             </label>
+            <div class="inner">
+                <input type="submit" class="button imgfull clr-white bg-redlight fon-medium" disabled value="立即登录" data-effects="press" />
+                <div class="table">
+                    <div class="table-cell txt-l clr-skyblue"><a href="#">忘记密码？</a></div>
+                    <div class="table-cell txt-r clr-redlight"><a href="regist.html">手机号快速注册</a></div>
+                </div>
+            </div>
+        </form>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+    </main>
+</div>
+
+<script src="../js/configDevices.min.js?v=1.0"></script>
+<script>
+ConfigDevices();
+</script>
+<script>
+	// 此处代码仅供静态页面效果展示
+	// 对接程序时请将此处代码去除
+	function checkRequired(){
+		$(".common-form input[required]").each(function(index, element) {
+			if($(this).val().length == 0){
+				$(".common-form").find("input[type=submit]").attr("disabled",true);
+				return false;
+			}else{
+				$(".common-form").find("input[type=submit]").attr("disabled",false);
+			}
+        });
+	}
+	$(".common-form input[required]").bind('input propertychange', checkRequired);
+	$(".common-form").find("input[type=submit]").click(function(e){
+			e.preventDefault();
+			window.location.href = "user.html";
+	});
+</script>
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="keywords" content="" />
+<meta name="Description" content="" />
+<meta name="author" content="Bille.Feng">
+<title>Animations</title>
+<link rel="stylesheet" href="../../css/reset.css"/>
+<link rel="stylesheet" href="../../css/animate.css"/>
+<script src="../../js/jquery-1.7.2.min.js"></script>
+<link rel="stylesheet" href="style.css"/>
+<title>Animations</title>
+</head>
+
+<body>
+	
+    <div class="wrap">
+    <div class="model animated"></div>
+    </div>
+    
+    <div class="controls">
+    	<a href="fadeIn">fadeIn</a>
+    	<a href="fadeInDown">fadeInDown</a>
+    	<a href="fadeInDownBig">fadeInDownBig</a>
+    	<a href="fadeInLeft">fadeInLeft</a>
+    	<a href="fadeInLeftBig">fadeInLeftBig</a>
+    	<a href="fadeInRight">fadeInRight</a>
+    	<a href="fadeInRightBig">fadeInRightBig</a>
+    	<a href="fadeInUp">fadeInUp</a>
+    	<a href="fadeInUpBig">fadeInUpBig</a>
+    	<a href="fadeOut">fadeOut</a>
+    	<a href="fadeOutDown">fadeOutDown</a>
+    	<a href="fadeOutDownBig">fadeOutDownBig</a>
+    	<a href="fadeOutLeft">fadeOutLeft</a>
+    	<a href="fadeOutLeftBig">fadeOutLeftBig</a>
+    	<a href="fadeOutRight">fadeOutRight</a>
+    	<a href="fadeOutRightBig">fadeOutRightBig</a>
+    	<a href="fadeOutUp">fadeOutUp</a>
+    	<a href="fadeOutUpBig">fadeOutUpBig</a>
+    	<a href="fluctuate">fluctuate</a>
+    	<a href="bounce">bounce</a>
+    	<a href="bounceIn">bounceIn</a>
+    	<a href="bounceInDown">bounceInDown</a>
+    	<a href="bounceInLeft">bounceInLeft</a>
+    	<a href="bounceInRight">bounceInRight</a>
+    	<a href="bounceInUp">bounceInUp</a>
+    	<a href="bounceOut">bounceOut</a>
+    	<a href="bounceOutDown">bounceOutDown</a>
+    	<a href="bounceOutLeft">bounceOutLeft</a>
+    	<a href="bounceOutRight">bounceOutRight</a>
+    	<a href="bounceOutUp">bounceOutUp</a>
+    	<a href="flash">flash</a>
+    	<a href="pulse">pulse</a>
+    	<a href="rubberBand">rubberBand</a>
+    	<a href="shake">shake</a>
+    	<a href="swing">swing</a>
+    	<a href="wiggle">wiggle</a>
+    	<a href="tada">tada</a>
+    	<a href="wobble">wobble</a>
+    	<a href="jello">jello</a>
+    	<a href="flip">flip</a>
+    	<a href="flipInX">flipInX</a>
+    	<a href="flipInY">flipInY</a>
+    	<a href="flipOutX">flipOutX</a>
+    	<a href="flipOutY">flipOutY</a>
+    	<a href="lightSpeedInRight">lightSpeedInRight</a>
+    	<a href="lightSpeedInLeft">lightSpeedInLeft</a>
+    	<a href="lightSpeedOut">lightSpeedOut</a>
+    	<a href="rotate">rotate</a>
+    	<a href="rotateIn">rotateIn</a>
+    	<a href="rotateInDownLeft">rotateInDownLeft</a>
+    	<a href="rotateInDownRight">rotateInDownRight</a>
+    	<a href="rotateInUpLeft">rotateInUpLeft</a>
+    	<a href="rotateInUpRight">rotateInUpRight</a>
+    	<a href="rotateOut">rotateOut</a>
+    	<a href="rotateOutDownLeft">rotateOutDownLeft</a>
+    	<a href="rotateOutDownRight">rotateOutDownRight</a>
+    	<a href="rotateOutUpLeft">rotateOutUpLeft</a>
+    	<a href="rotateOutUpRight">rotateOutUpRight</a>
+    	<a href="hinge">hinge</a>
+    	<a href="rollIn">rollIn</a>
+    	<a href="rollInRight">rollInRight</a>
+    	<a href="rollOut">rollOut</a>
+    	<a href="zoomIn">zoomIn</a>
+    </div>
+
+	<script>
+	$(function(){
+		$(".controls").find("a").click(function(){
+			var cls = $(this).attr("href");
+			$(".model").remove();
+			$("<div class='model animated "+cls+"'></div>").appendTo($(".wrap"));
+			return false;
+		});
+	});
+	</script>
+
+</body>
+</html>

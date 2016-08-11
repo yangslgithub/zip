@@ -1,0 +1,165 @@
+@charset "utf-8";
+/* CSS Document */
+
+.banner {
+	background-position:center center;
+	background-repeat:repeat-x;
+	height:220px;
+	position:relative;
+	overflow:hidden;
+}
+.banner img {
+	position:absolute;
+	width:1920px;
+	left:50%;
+	top:0px;
+	margin-left:-960px;
+}
+
+header.caption {
+	height:60px;
+	line-height:60px;
+	border-bottom:solid #ededed 1px;
+	text-align:center;
+}
+header.caption hgroup {
+	display:inline-block;
+	font-size:22px;
+	color:#333;
+	background:url(../images/ico-bulb.png) left center no-repeat;
+	padding:0 0 0 34px;
+	border-bottom:solid #e03e3f 1px;
+}
+
+
+.custom-list li{
+	width:226px;
+	display:inline;
+	float:left;
+	padding:0 60px 0 80px;
+	height:80px
+}
+
+
+.red-block{
+	border-left:solid red 10px;
+	padding-left:10px;
+}
+.step {
+	width:1026px;
+	margin:0 auto;
+}
+.step .step-controls {
+	height:46px;
+	overflow:hidden;
+	position:relative !important;
+}
+.step .step-controls li{
+	display:inline;
+	float:left;	
+	position:relative;
+	width:342px;
+	background:#eee;
+	height:46px;
+	line-height:46px;
+	text-align:center;
+}
+.step .step-controls li:nth-child(1) {
+	z-index:3;
+}
+.step .step-controls li:nth-child(2) {
+	z-index:2;
+}
+.step .step-controls .arrow{
+	width: 0;
+	height: 0;
+	border-top: 46px solid transparent;
+	border-left: 46px solid #eee;
+	border-bottom: 46px solid transparent; 
+	position:absolute;
+	top:-23px;
+	right:-23px;
+	z-index:1;
+}
+.step .step-controls .arrow-white{
+	border-left-color: #fff;
+}
+.step .step-controls li.active {
+	background:#fe8179;
+	color:white;
+}
+.step .step-controls li.active .arrow {
+	border-left-color:#fe8179;	
+}
+.step .step-controls li.active .arrow-white {
+	border-left-color: #fff;
+}
+.step .step-content {
+	position:relative;
+	margin-top:100px;
+}
+.step .step-content .prev,
+.step .step-content .next {
+	display:block;
+	position:absolute;
+	width:35px;
+	height:70px; 
+	top:50%;
+	margin-top:-35px;
+	background-image:url(../images/arrow.png);
+	background-repeat:no-repeat;
+}
+.step .step-content .prev{
+	background-position:0 0;
+	left:0;
+}
+.step .step-content .next{
+	background-position:-35px 0; 
+	right:0;
+}
+.step .step-content ul {
+	overflow:hidden;
+	*zoom:1;
+	width:80%;
+	margin:0 auto;
+}
+.regist-box{
+	padding:54px 65px;
+    border: 1px solid #e9e9e9;
+    background: #fafafa url(../images/logo.png) 86px center no-repeat;
+	text-align:right;
+}
+.regist-box input{
+    width: 290px;
+    height: 49px;
+    border: 1px solid #f94040;
+	padding:0 20px;
+}
+.regist-box a{
+    width: 157px;
+    height: 51px;
+    line-height: 51px;
+    background-color: #f94040;
+    color: #fff;
+    text-align: center;
+}
+.access-list {
+	width:1185px;
+	margin:0 0 0 50px;
+}
+.access-list li{
+	width:395px;
+	height:82px;
+	margin-top:50px;
+}
+
+.security-foot{
+	background:url(../images/security-bg-img.jpg) 0 0 no-repeat;
+	height:266px;
+	margin-bottom:-60px
+}
+.security-foot a{
+	width:302px;
+	height:50px;
+	line-height:50px;
+}
